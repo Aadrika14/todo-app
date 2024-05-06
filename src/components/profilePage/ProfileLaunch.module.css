@@ -1,0 +1,28 @@
+.btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: rgb(228, 67, 67);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Correct the position */
+  bottom: -1rem; /* Adjust the distance from the bottom */
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    height: 30px;
+    font-size: 0.8rem;
+    bottom: -8rem; /* Adjusted distance */
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 120px;
+    height: 25px;
+    font-size: 0.7rem;
+    bottom: 6rem; /* Adjusted distance */  }
+}

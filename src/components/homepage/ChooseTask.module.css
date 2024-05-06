@@ -1,0 +1,59 @@
+ /* Container style */
+ .radioContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  flex-wrap:wrap ;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Radio button style */
+.radioButton {
+  background-color: white;
+  display: grid;
+  margin-bottom: 30px;
+  height:36rem;
+  width:32rem;
+  position: relative;
+  top:0rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 20px;
+  margin:10px 30px 10px 20px;
+}
+
+.radioButton.selected {
+  background-color: blue;
+}
+
+.radioButton:hover {
+  transform: scale(1.01); /* Increase size */
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Apply transition */
+}
+.itemText{
+  font-weight: bolder;
+  font-size:2.5rem ;
+}
+.img{
+  height:28rem;
+  width:29rem;
+  padding: 1rem;
+  margin-right: 20px;
+}
+.side{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.side input{
+  height:2rem;
+  color: red;
+}
+/* @media screen {
+  .radioContainer{
+    width:80%;
+  }
+} */

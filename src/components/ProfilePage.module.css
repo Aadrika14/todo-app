@@ -1,0 +1,13 @@
+
+
+.background {
+  display: grid;
+  background-image: url('../assets/profileback.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  flex-direction: column;
+  height: 100vh; /* Make the container full viewport height */
+  display: flex; /* Use flexbox for centering content vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}

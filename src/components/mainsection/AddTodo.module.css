@@ -1,0 +1,44 @@
+.inp{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  margin: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  height: 3.5rem;
+  width: 15rem;
+}
+.inp:focus {
+  border-color: dodgerblue;
+}
+.inp2{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  margin: 1rem;
+  margin-right: 1rem;
+  position: relative;
+  height: 3.5rem;
+  width: 15rem;
+  margin-left: -3rem;
+}
+.inp2:focus {
+  border-color: dodgerblue;
+}
+.btn{
+  margin: 1rem;
+  margin-right: 1rem;
+  color: white;
+  width:6.3rem;
+  height:3rem;
+  border-radius: 1rem;
+  background-color: rgb(97, 191, 97);
+  position: relative;
+  right: 1.5rem;
+}

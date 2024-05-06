@@ -1,0 +1,12 @@
+.container{
+  height:50rem;
+  width:44rem;
+  border:2px solid black;
+  padding:20px;
+  margin:3rem;
+  border: 2px solid blue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: url('./../../assets/todoback.jpg');
+  position: relative;
+  left: 30%;
+}

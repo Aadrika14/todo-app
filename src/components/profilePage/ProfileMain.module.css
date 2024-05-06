@@ -1,0 +1,106 @@
+/* ProfileMain.module.css */
+
+.container {
+  width: 35rem;
+  max-width: 95%; /* Adjusted for responsiveness */
+  height: auto; /* Adjusted for responsiveness */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 1rem auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+.prof {
+  text-align: center; /* Center the text */
+}
+
+.prof img {
+  max-width: 100%; /* Ensure image doesn't overflow */
+  height: 14rem; /* Maintain aspect ratio */
+  width:14rem;
+}
+
+.up {
+  margin-top: 1rem; /* Adjust spacing */
+  text-align: center; /* Center the text */
+  background-color: rgb(209, 206, 206);
+  border-radius: 2rem;
+  display: flex;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.up img {
+  max-width: 100%; /* Ensure image doesn't overflow */
+  height: 4rem; /* Maintain aspect ratio */
+  width:4rem;
+}
+
+.up p {
+  font-size: 1.7rem; /* Adjust spacing */
+}
+
+.name {
+  margin-top: 1rem; /* Adjust spacing */
+  text-align: center; /* Center the text */
+  place-items: center;
+
+}
+
+/* ProfileMain.module.css */
+
+.name input {
+  width: 100%; /* Make input fill container width */
+  padding: 0.5rem; /* Add padding for better appearance */
+  border: 2px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  font-size: 1rem; /* Adjust font size */
+  outline: none; /* Remove outline */
+  transition: border-color 0.2s ease; /* Add transition for smooth effect */
+}
+
+.name input:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .up {
+    width: 60%;
+  }
+
+  .name {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .prof img {
+    max-width: 80%;
+  }
+
+  .up {
+    width: 80%;
+  }
+
+  .name {
+    width: 90%;
+  }
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

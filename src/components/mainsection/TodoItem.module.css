@@ -1,0 +1,21 @@
+.col{
+  font-weight:600;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.4rem;
+  margin-top: 4rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  margin: 1rem;
+  position: relative;
+  top:-1.4rem;
+  left: -1rem;
+  width: 5.7rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: red;
+  color: white;
+}

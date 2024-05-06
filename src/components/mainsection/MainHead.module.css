@@ -1,0 +1,19 @@
+.head{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background: -webkit-linear-gradient(50deg, #b11647, #0b1998);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.d{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d img{
+  height: 11rem;
+  width: 12rem;
+}

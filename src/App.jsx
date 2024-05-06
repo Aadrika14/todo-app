@@ -1,0 +1,22 @@
+import { Route, Router, Routes } from 'react-router-dom';
+import ProfilePage from './components/ProfilePage';
+import HomePage from './components/HomePage';
+import { useState } from 'react';
+import Login from './components/LoginPage';
+import Signup from './components/signuppage/Signup';
+import MainSectionPage from './components/MainSectionPage';
+
+function App(){
+  return (
+    <>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/profile' element={<ProfilePage/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/signup' element={<Signup/>}></Route>
+        <Route path='/main' element={<MainSectionPage/>}></Route>
+      </Routes>
+  </>
+  )
+}
+export default App;
