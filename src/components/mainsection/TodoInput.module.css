@@ -1,0 +1,20 @@
+.inp input{
+  height: 3rem;
+  width: 27rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.inp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inp button{
+  height: 3rem;
+  width: 6rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(30, 231, 30);
+  color: white;
+}
