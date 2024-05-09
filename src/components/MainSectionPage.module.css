@@ -1,0 +1,49 @@
+.app{
+  border: 1px solid black;
+  padding: 10px; /* Add padding for better spacing */
+  width: 40rem; 
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  position: relative;
+  left: 30%;
+  top:10%;
+  box-shadow:2px 2px 4px rgba(122, 100, 249, 0.745);
+  background-image: url('../assets/todoback.jpg');
+}
+.db_elem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.collective {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  width:38rem;
+  
+}
+
+.collective h1 {
+  margin-right: auto;
+}
+
+.collective button {
+  margin-left: auto;
+  width:8rem;
+  height: 2.6rem;
+  margin-left: 0rem;
+  border-radius: 0.4rem;
+  background-color: rgb(255, 89, 89);
+  color:white;
+}
+.completed{
+  justify-content: right;
+  position: relative;
+  width: 8rem;
+  margin: 2rem;
+  right:-1rem;
+}
