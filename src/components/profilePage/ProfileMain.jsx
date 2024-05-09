@@ -1,30 +1,27 @@
 import { assets } from "../../assets/assets";
+import React from 'react';
 import styles from './ProfileMain.module.css';
 
-function ProfileMain(){
+function ProfileMain() {
   return (
-    <>
-    <div className={styles.container}>
-
-      <div className={styles.prof}>
-      <h3>Your Profile</h3>
-      <img src={assets.profile} alt="" />
+    <div className={styles.profileContainer}>
+      <h1 className={styles.profileHeader}>Your Profile</h1>
+      <div className={styles.profileImageContainer}>
+        <img src={assets.Profile1} alt="Profile1" className={styles.profileImage} />
       </div>
-
-      <div className={styles.center}>
-
-        <div className={styles.up}>
-          <img src={assets.upload} alt=""  className={styles.image}/>
-          <p>Upload Photo</p>
-        </div>
-
-        <div className={styles.name}>
-        <input type="text" placeholder="Enter your name"/>
-    </div>
-
+      <div className={styles.uploadContainer}>
+        <img src={assets.upload} alt="Upload" className={styles.uploadIcon} />
+        <span className={styles.uploadText}>Upload Photo</span>
       </div>
+      <input className={styles.inputField} type="text" placeholder="Enter your name" />
+      <input className={styles.inputField} type="email" placeholder="Enter Your Email" />
+      <button className={styles.updateButton}>Update Profile</button>
     </div>
-    </>
-  )
+  );
 }
+
 export default ProfileMain;
+
+
+
+

@@ -1,28 +1,36 @@
-.btn {
-  width: 200px;
-  height: 60px;
-  border-radius: 50px;
-  background-color: rgb(228, 67, 67);
-  color: white;
+.launchButtonContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Correct the position */
-  bottom: -1rem; /* Adjust the distance from the bottom */
+  justify-content: flex-end; /* Align the button to the right */
+  padding: 10px; /* Provide some padding */
+  width: 95%;
+  margin-bottom: 10px;
+}
 
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
+.launchButton {
+  width: 200px;
+  height: 50px;
+  padding: 3px 10px; /* Adjust padding as needed */
+  background-color: #f35626; /* Specific blue color */
+  color: white;
+  border-radius: 30px; /* Rounded corners */
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as necessary */
+}
+
+
+@media (max-width: 768px) {
+  .launchButton {
     width: 150px;
-    height: 30px;
-    font-size: 0.8rem;
-    bottom: -8rem; /* Adjusted distance */
+    height: 45px;
+    font-size: 14px;
   }
+}
 
-  @media screen and (max-width: 480px) {
+@media (max-width: 480px) {
+  .launchButton {
     width: 120px;
-    height: 25px;
-    font-size: 0.7rem;
-    bottom: 6rem; /* Adjusted distance */  }
+    height: 40px;
+    font-size: 12px;
+  }
 }

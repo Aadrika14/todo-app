@@ -11,6 +11,9 @@ import profileback from './profileback.jpg';
 import background from './background.webp';
 import todoback from './todoback.jpg';
 import cute from './cuted.png';
+import smile from './smile.webp';
+import Profile1 from './profile1.jpg';
+import MainBackground from './mainbackground.jpg';
 
 
 
@@ -27,5 +30,8 @@ export const assets={
   todoback,
   signup,
   profileback,
-  background
+  background,
+  smile,
+  Profile1,
+  MainBackground
 }
