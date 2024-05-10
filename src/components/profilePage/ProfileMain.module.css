@@ -1,106 +1,107 @@
-/* ProfileMain.module.css */
-
-.container {
-  width: 35rem;
-  max-width: 95%; /* Adjusted for responsiveness */
-  height: auto; /* Adjusted for responsiveness */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin: 1rem auto; /* Center the container horizontally */
-  padding: 20px;
-}
-
-.prof {
-  text-align: center; /* Center the text */
-}
-
-.prof img {
-  max-width: 100%; /* Ensure image doesn't overflow */
-  height: 14rem; /* Maintain aspect ratio */
-  width:14rem;
-}
-
-.up {
-  margin-top: 1rem; /* Adjust spacing */
-  text-align: center; /* Center the text */
-  background-color: rgb(209, 206, 206);
-  border-radius: 2rem;
+.profileContainer {
   display: flex;
-  place-items: center;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-color: #fff0f5;
+  padding: 25px;
+  border-radius: 20px;
+  width: 60%;
+  /* height: 80%; */
+  max-width: 600px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-.up img {
-  max-width: 100%; /* Ensure image doesn't overflow */
-  height: 4rem; /* Maintain aspect ratio */
-  width:4rem;
+.profileHeader {
+  color: #2a2a72;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
-.up p {
-  font-size: 1.7rem; /* Adjust spacing */
+.profileImageContainer {
+  margin-bottom: 1px;
 }
 
-.name {
-  margin-top: 1rem; /* Adjust spacing */
-  text-align: center; /* Center the text */
-  place-items: center;
-
+.profileImage {
+  width: 170px;
+  height: 170px;
+  border-radius: 75px;
 }
 
-/* ProfileMain.module.css */
-
-.name input {
-  width: 100%; /* Make input fill container width */
-  padding: 0.5rem; /* Add padding for better appearance */
-  border: 2px solid #ccc; /* Add border */
-  border-radius: 5px; /* Add border-radius for rounded corners */
-  font-size: 1rem; /* Adjust font size */
-  outline: none; /* Remove outline */
-  transition: border-color 0.2s ease; /* Add transition for smooth effect */
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.name input:focus {
-  border-color: #007bff; /* Change border color on focus */
+.uploadIcon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1px;
 }
 
+.uploadText {
+  font-size: 0.8rem;
+  margin-bottom: 11px;
+  color: #2a2a72;
+}
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  .container {
+.inputField {
+  height: 25%;
+  width: 60%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.inputField:focus {
+  border-color: #6a5acd;
+}
+
+.updateButton {
+  padding: 10px 20px;
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.updateButton:hover {
+  background-color: #228b22;
+}
+
+@media (max-width: 768px) {
+  .profileContainer {
     width: 80%;
     padding: 15px;
   }
 
-  .up {
-    width: 60%;
+  .profileImage {
+    width: 150px;
+    height: 150px;
   }
 
-  .name {
-    width: 70%;
+  .uploadIcon {
+    width: 15px;
+    height: 15px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    width: 90%;
+@media (max-width: 480px) {
+  .profileContainer {
+    width: 85%;
     padding: 10px;
   }
 
-  .prof img {
-    max-width: 80%;
+  .profileHeader {
+    font-size: 1.5rem;
   }
 
-  .up {
-    width: 80%;
+  .updateButton {
+    padding: 8px 16px;
   }
-
-  .name {
-    width: 90%;
-  }
-}
-.center{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
