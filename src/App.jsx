@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Login from './components/LoginPage';
 import Signup from './components/signuppage/Signup';
 import MainSectionPage from './components/MainSectionPage';
+import SettingsPage from './components/settingspage/settings';
 
 function App(){
   return (
@@ -15,6 +16,7 @@ function App(){
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/main' element={<MainSectionPage/>}></Route>
+        <Route path='/settings' element={<SettingsPage/>}></Route>
       </Routes>
   </>
   )
