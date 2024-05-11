@@ -118,3 +118,23 @@
 .content input[type="checkbox"]:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+  
+    .sidebar {
+        width: 100%;
+    }
+  
+    .content {
+        padding: 20px;
+    }
+  
+    .content input[type="text"],
+    .content input[type="email"] {
+        width: 100%;
+    }
+}
