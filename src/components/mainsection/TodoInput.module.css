@@ -1,20 +1,72 @@
-.inp input{
-  height: 3rem;
-  width: 27rem;
-  border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-}
-.inp{
+.container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
 }
-.inp button{
-  height: 3rem;
-  width: 6rem;
-  margin: 2rem;
-  border-radius: 1rem;
-  background-color: rgb(30, 231, 30);
-  color: white;
+
+.dashboardHeader {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5f5dc; 
+  padding: 20px;
+}
+
+.sidebarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarMenu li {
+  margin-bottom: 10px;
+}
+
+.sidebarMenu h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.sidebarMenu ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.sidebarMenu ul li a {
+  display: block;
+  padding: 4px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebarMenu ul li a:hover {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+
+h2.task{
+  color:orangered;
+}
+
+h2.view{
+  margin-top:30px;
+  margin-left:1200px;
+  font-size: medium;
+
+
+}
+
+.overdueDropdown{
+  margin-left:40px;
+}
+
+.content{
+  margin-top:20px;
+  margin-left:40px;
 }
