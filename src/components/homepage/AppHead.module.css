@@ -1,10 +1,10 @@
 .head {
-  margin: 0;
+  margin: 30px 10px 20px 30px ;
   top: -1rem;
-  font-size: 5rem;
+  font-size: 4rem;
   position: relative;
   font-weight: bold;
-  background: -webkit-linear-gradient(86deg, #2465cd, #be1000);
+  background: -webkit-linear-gradient(86deg, #c3c3cd, #168ce6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
@@ -15,10 +15,32 @@
 .head2 {
   font-size: 2rem;
   margin: 0rem;
+  margin-bottom: 10px;
   top: 0rem;
   position: relative;
-  color: grey;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .head {
+    font-size: 3rem;
+  }
+
+  .head2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .head {
+    font-size: 2rem;
+  }
+
+  .head2 {
+    font-size: 1rem;
+  }
 }

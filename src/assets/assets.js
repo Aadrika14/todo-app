@@ -17,6 +17,8 @@ import MainBackground from './mainbackground.jpg';
 
 
 
+
+
 export const assets={
   personal,
   education,
@@ -33,5 +35,5 @@ export const assets={
   background,
   smile,
   Profile1,
-  MainBackground
+  MainBackground,
 }

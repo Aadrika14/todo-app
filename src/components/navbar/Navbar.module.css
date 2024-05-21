@@ -1,0 +1,104 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  rgb(22, 20, 20);
+  padding: 1rem;
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick to the top */
+  z-index: 10; /* Ensure navbar is above other content */
+}
+
+.logo {
+  color: white;
+  font-size: 1.7rem;
+  margin-left: 25px;
+}
+
+.hamburgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburgerMenu span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.hamburgerMenu span.open {
+  background: #fff;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.5s ease-in-out, visibility 0.5s, opacity 0.5s;
+}
+
+.navItem {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+}
+
+.navItem a:hover {
+  text-decoration: none;
+}
+
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+  .hamburgerMenu {
+      display: flex;
+  }
+
+  .navLinks {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: rgba(51, 51, 51, 0.9); /* Slight transparency for better visibility */
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(100%);
+      z-index: 9; /* Ensure the nav menu is above other content */
+      visibility: hidden;
+      opacity: 0;
+  }
+
+  .navLinks.active {
+      transform: translateX(0);
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .navItem {
+      margin: 1rem 0;
+  }
+
+  .navItem a {
+      font-size: 1.5rem;
+  }
+}
+
+/* For screens up to 480px */
+@media screen and (max-width: 480px) {
+  .logo {
+      font-size: 1.25rem;
+  }
+
+  .navItem a {
+      font-size: 1.25rem;
+  }
+}
