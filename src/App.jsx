@@ -6,6 +6,7 @@ import Login from './components/LoginPage';
 import Signup from './components/signuppage/Signup';
 import MainSectionPage from './components/MainSectionPage';
 import SettingsMain from './components/SettingsMain';
+import RegisterPage from './components/RegisterPage';
 
 function App(){
   return (
@@ -17,6 +18,7 @@ function App(){
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/main' element={<MainSectionPage/>}></Route>
         <Route path='/setting' element={<SettingsMain/>}></Route>
+        <Route path='/register' element={<RegisterPage/>}></Route>
       </Routes>
   </>
   )
