@@ -1,4 +1,4 @@
-import SettingsPage from "./settingspage/SettingsPage";
+import SettingsPage from "./settingspage/settings";
 
 function SettingsMain(){
   return (
