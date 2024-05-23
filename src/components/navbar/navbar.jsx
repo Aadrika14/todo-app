@@ -18,7 +18,6 @@ const Navbar = () => {
             </div>
             <ul className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
                 <li className={styles.navItem}><a href="">Home</a></li>
-                <li className={styles.navItem}><a href="">About</a></li>
                 <li className={styles.navItem}><a href="/signup">Signup</a></li>
                 <li className={styles.navItem}><a href="/login">Login</a></li>
             </ul>

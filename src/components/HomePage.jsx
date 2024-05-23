@@ -16,7 +16,7 @@ function HomePage() {
     {/* <Buttons/> */}
       <AppHead />
       <ChooseTask setSelectedTask={setSelectedOption} />
-      <ContinueButton disabled={!selectedOption} />
+      {/* <ContinueButton disabled={!selectedOption} /> */}
     </div>
     </>
   );

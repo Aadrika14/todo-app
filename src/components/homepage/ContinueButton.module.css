@@ -10,7 +10,7 @@
   width: 9em;
   height: 4rem;
   border-radius: 50px;
-  background-color: rgb(228, 67, 67);
+  background-color: rgb(34, 44, 226);
   color: white;
   font-size: 1.7rem;
   margin-top: 10px;
@@ -24,7 +24,7 @@
 }
 
 .disabled {
-  background-color: rgb(96, 189, 243);
+  background-color: rgb(14, 7, 197);
   color: black;
 }
 

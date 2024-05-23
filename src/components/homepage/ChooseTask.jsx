@@ -1,10 +1,26 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { assets } from '../../assets/assets';
 import styles from './ChooseTask.module.css';
 
 function ChooseTask({ setSelectedTask }) {
+  const navigate = useNavigate();
+
   const handleOptionChange = (option) => {
     setSelectedTask(option);
+    switch (option) {
+      case 'option1':
+        navigate('/personal');
+        break;
+      case 'option2':
+        navigate('/work');
+        break;
+      case 'option3':
+        navigate('/education');
+        break;
+      default:
+        break;
+    }
   };
 
   return (
