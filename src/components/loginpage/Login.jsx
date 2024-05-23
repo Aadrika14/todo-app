@@ -1,7 +1,7 @@
 // Login.jsx
 import React, { useState } from 'react';
 import styles from './Login.module.css'; // Import your CSS file for styling
-import { assets } from "../../assets/assets";
+import { FaEnvelope, FaLock } from 'react-icons/fa';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -15,37 +15,49 @@ function Login() {
   };
 
   return (
-    <div className={styles.container}>
-      <img src={assets.login} alt="Login" className={styles.loginImage} />
-      <div className={styles.overlay}></div>
-      <div className={styles.content}>
-        <h2 className={styles.heading}>Login</h2>
+    <div className={styles.pageContainer}>
+      <div className={styles.loginContainer}>
+        <h4 className={styles.welcomeBack}>Welcome Back</h4>
+        <h2 className={styles.loginHeading}>Log in to your account</h2>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.inputGroup}>
-            <label htmlFor="email" className={styles.label}>Email</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className={styles.input}
-              placeholder="Enter your email"
-              required
-            />
+            
+            <div className={styles.inputWrapper}>
+              <FaEnvelope className={styles.icon} />
+              <input
+                type="email"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className={styles.input}
+                placeholder="Username or Email"
+                required
+              />
+            </div>
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor="password" className={styles.label}>Password</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className={styles.input}
-              placeholder="Enter your password"
-              required
-            />
+            
+            <div className={styles.inputWrapper}>
+              <FaLock className={styles.icon} />
+              <input
+                type="password"
+                id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className={styles.input}
+                placeholder="Password"
+                required
+              />
+            </div>
           </div>
-          <button type="submit" className={styles.submitButton}>Login</button>
+          <div className={styles.forgotPassword}>
+            <a href="/forgot-password" className={styles.links}>Forgot your password?</a>
+          </div>
+          <button type="submit" className={styles.submitButton}>LOG IN</button>
+          <div className={styles.createAccount}>
+            <span>Don't have an account? </span>
+            <a href="/create-account" className={styles.link}>Create account</a>
+          </div>
         </form>
       </div>
     </div>

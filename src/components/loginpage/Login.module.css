@@ -1,46 +1,32 @@
 /* Login.module.css */
-
-.container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+.pageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  height: 100vh;
+  background-color: black;
+  padding: 20px; /* Add padding to prevent content from touching the edges on small screens */
 }
 
-.loginImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
-}
-
-.content {
-  z-index: 1;
-  position: relative;
-  max-width: 400px;
+.loginContainer {
+  background-color: white;
   padding: 40px;
-  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
 }
 
-.heading {
-  text-align: center;
+.welcomeBack {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #e2c314;
+}
+
+.loginHeading {
   margin-bottom: 20px;
+  font-size: 26px;
   color: #333;
 }
 
@@ -50,39 +36,142 @@
 }
 
 .inputGroup {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .label {
-  font-weight: bold;
   margin-bottom: 5px;
+  font-size: 14px;
+  color: #111010;
+}
+
+.inputWrapper {
+  position: relative;
+  color: black;
+}
+
+.inputGroup {
+  border: solid black;
+  border-radius: 7px;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
 }
 
 .input {
-  padding: 12px;
-  border: none;
-  border-bottom: 2px solid #007bff;
-  background-color: transparent;
-  font-size: 16px;
-  transition: border-bottom-color 0.3s ease;
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* Adjust padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .input:focus {
-  outline: none;
-  border-bottom-color: #0056b3;
+  outline: black;
+}
+
+.forgotPassword {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.link {
+  color: #77b0ed;
+  text-decoration: none;
+}
+
+.links {
+  margin-right: 70px;
+  color: #77b0ed;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .submitButton {
-  padding: 12px;
-  background-color: #007bff;
-  color: #fff;
+  width: 100%;
+  padding: 10px;
+  background-color: #e2cd29;
   border: none;
   border-radius: 4px;
+  color: rgb(12, 11, 11);
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: 2px 17px 7px black;
 }
 
 .submitButton:hover {
   background-color: #0056b3;
+}
+
+.createAccount {
+  margin-top: 45px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .loginContainer {
+    padding: 30px;
+  }
+
+  .welcomeBack {
+    font-size: 18px;
+  }
+
+  .loginHeading {
+    font-size: 24px;
+  }
+
+  .input {
+    font-size: 12px;
+  }
+
+  .submitButton {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginContainer {
+    padding: 20px;
+  }
+
+  .welcomeBack {
+    font-size: 16px;
+  }
+
+  .loginHeading {
+    font-size: 22px;
+  }
+
+  .input {
+    font-size: 12px;
+  }
+
+  .submitButton {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .links {
+    margin-right: 0;
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .forgotPassword,
+  .createAccount {
+    text-align: center;
+  }
 }

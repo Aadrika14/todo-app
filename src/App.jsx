@@ -5,7 +5,8 @@ import { useState } from 'react';
 import Login from './components/LoginPage';
 import Signup from './components/signuppage/Signup';
 import MainSectionPage from './components/MainSectionPage';
-import SettingsPage from './components/settingspage/settings';
+import SettingsMain from './components/SettingsMain';
+import RegisterPage from './components/RegisterPage';
 
 function App(){
   return (
@@ -16,10 +17,15 @@ function App(){
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/main' element={<MainSectionPage/>}></Route>
+<<<<<<< HEAD
         <Route path='/settings' element={<SettingsPage/>}></Route>
         <Route path='/personal' element={<MainSectionPage/>}></Route>
         <Route path='/work' element={<MainSectionPage/>}></Route>
         <Route path='/education' element={<MainSectionPage/>}></Route>
+=======
+        <Route path='/setting' element={<SettingsMain/>}></Route>
+        <Route path='/register' element={<RegisterPage/>}></Route>
+>>>>>>> 55954660b07c79941520bdc0638bffeccbfdddec
       </Routes>
   </>
   )
